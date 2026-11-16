@@ -130,7 +130,7 @@ A star schema built with SQL views in the `analytics` schema:
 - Cohort retention by first purchase month.
 
 **Python**
-- `forecast.py`: Holt-Winters exponential smoothing (additive trend, damped if configured) for a 6-month revenue forecast, with a 3-month holdout backtest and residual-based bounds.
+- `forecast.py`: Holt-Winters exponential smoothing with a damped additive trend (chosen because it reduced backtest error from 36.7% to 31.0%)
 - `repeat_model.py`: logistic regression baseline and gradient boosting classifier to predict repeat purchase from first-order features, with a stratified train/test split and class weighting for imbalance. Evaluated with ROC-AUC and PR-AUC.
 
 **Power BI**
@@ -201,6 +201,7 @@ olist-analytics/
 - **Delivered orders only** feed the RFM and cohort tables, so totals can differ slightly from headline revenue.
 - **Anonymized data:** there is no customer demographic or marketing channel data, so causes of low retention cannot be tested directly.
 - Observational data cannot prove that late delivery *causes* low reviews, only that they move together.
+- The damped-trend choice was made by comparing two options on the same 3-month holdout, so the 31.0% error is slightly optimistic.
 
 ## Next steps
 
