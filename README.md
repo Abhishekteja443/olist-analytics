@@ -213,6 +213,6 @@ olist-analytics/
 ## Credits and license
 
 - Data: Olist, *Brazilian E-Commerce Public Dataset*, via Kaggle. Check the dataset page for its license terms (published for open, non-commercial use at the time of writing) and credit Olist if you reuse it.
-- Code in this repository: [MIT License] (LICENSE)
+- Code in this repository: ![MIT License](LICENSE)
 
 **Author:** Abhishek Teja Goli
