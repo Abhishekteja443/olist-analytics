@@ -1,0 +1,7 @@
+{
+  "name": "Olist Clean",
+  "dataColors": ["#1F4E79", "#2E86C1", "#F39C12", "#E74C3C", "#7F8C8D", "#27AE60"],
+  "background": "#FFFFFF",
+  "foreground": "#2C3E50",
+  "tableAccent": "#1F4E79"
+}
