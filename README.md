@@ -2,7 +2,7 @@
 
 An end-to-end analytics project on ~100K Brazilian e-commerce orders. Raw CSVs are loaded into PostgreSQL, modeled as a star schema with SQL, extended with Python forecasting and a repeat-purchase model, and presented in a 4-page Power BI dashboard with business recommendations.
 
-![Executive Overview](images/page1_executive_overview.png)
+![Executive Overview](images/page1_executive_overview.jpg)
 
 ## Table of contents
 
@@ -70,9 +70,9 @@ Analysis window: **January 2017 to August 2018**, about 98K valid orders and 95K
 | **3. Delivery and Satisfaction** | Is logistics hurting reviews? | Review score by delay bucket, late delivery % by state, seller scatter, top sellers table |
 | **4. Forecast and Predictions** | What happens next? | Revenue forecast with confidence band, repeat-purchase score distribution, recommendations |
 
-![Customers](images/page2_customers.png)
-![Delivery and Satisfaction](images/page3_delivery.png)
-![Forecast and Predictions](images/page4_forecast.png)
+![Customers](images/page2_customers.jpg)
+![Delivery and Satisfaction](images/page3_delivery.jpg)
+![Forecast and Predictions](images/page4_forecast.jpg)
 
 ## Tech stack
 
@@ -213,6 +213,6 @@ olist-analytics/
 ## Credits and license
 
 - Data: Olist, *Brazilian E-Commerce Public Dataset*, via Kaggle. Check the dataset page for its license terms (published for open, non-commercial use at the time of writing) and credit Olist if you reuse it.
-- Code in this repository: [MIT License]
+- Code in this repository: ![MIT License](LICENSE)
 
 **Author:** Abhishek Teja Goli
