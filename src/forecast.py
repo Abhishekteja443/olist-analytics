@@ -27,11 +27,11 @@ monthly = pd.read_sql("""
 y = monthly.set_index("month")["revenue"].asfreq("MS")
 
 train, test = y.iloc[:-3], y.iloc[-3:]
-bt = ExponentialSmoothing(train, trend="add").fit()
+bt = ExponentialSmoothing(train, trend="add",damped_trend=True).fit()
 mape = (np.abs(test - bt.forecast(3)) / test).mean() * 100
 print(f"Backtest MAPE on last 3 months: {mape:.1f}%")
 
-fit = ExponentialSmoothing(y, trend="add").fit()
+fit = ExponentialSmoothing(y, trend="add",damped_trend=True).fit()
 horizon = 6
 fc = fit.forecast(horizon)
 sigma = np.std(fit.resid, ddof=1)
